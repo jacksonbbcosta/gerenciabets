@@ -1,0 +1,113 @@
+/* Estilos Globais com Fundo em Degradê */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #FFA500, #FFFFFF); /* Degradê de laranja vivo para branco */
+    height: 100vh; /* Garante que o gradiente cubra a tela inteira */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do Título Principal */
+.title {
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container do Histórico e Gráficos */
+.history-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    max-width: 1200px; /* Limita a largura máxima */
+    width: 100%; /* Ajusta a largura para a tela */
+}
+
+/* Conteúdo do Histórico */
+.history-content {
+    flex: 2;
+    margin-right: 20px; /* Espaço entre a tabela e os gráficos */
+}
+
+.history-table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.history-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.history-container th, .history-container td {
+    border: 1px solid #ddd;
+    padding: 4px;
+    text-align: left;
+}
+
+.history-container th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos dos Status */
+.status-ganha {
+    color: green !important;
+}
+
+.status-perdida {
+    color: red !important;
+}
+
+.status-pendente {
+    color: orange !important;
+}
+
+/* Resumo */
+.summary {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    font-size: 12px;
+}
+
+/* Container de Gráficos */
+.charts-container {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Gráficos */
+.chart {
+    height: 180px; /* Ajuste a altura conforme necessário */
+    margin-bottom: 20px;
+}
+
+/* Botão de Voltar */
+.back-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
